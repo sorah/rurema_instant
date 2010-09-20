@@ -1,0 +1,8 @@
+{
+  "name": "Rurema Search Instant",
+  "version": "1.0",
+  "content_scripts": [{
+    "js": [ "jquery.js", "rurema_instant.js" ],
+    "matches": [ "http://rurema.clear-code.com/*" ]
+  }]
+}

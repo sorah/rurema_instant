@@ -20,6 +20,21 @@ Input query in textbox, and wait 0.2 second.
 
 This extension loads result after 0.2 second from last type.
 
+## How does it work?
+
+1. Detect page: Top page or Search result page?
+
+### If top page
+
+2. Set keyup event listener for search form. If called listener, clear timeout and set timeout with 200ms.
+3. If called timeout, load result and replace for it.
+4. Set event listener for search result.
+
+### If search result
+
+2. Set keyup event listener for search form. If called listener, clear timeout and set timeout with 200ms.
+3. If called timeout, load result and detect `content.div`, then replace it.
+
 ## License
 
 MIT License

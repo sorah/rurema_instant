@@ -28,11 +28,13 @@ if($(".search-header").length == 0) {
       $.ajax({
         type: "POST",
         url: "./",
-        data: "query="+$("#query-input").val(),
+        data: "query="+$("input.query").val(),
         cache: false,
         success: function(html){
-          location.hash = "#" + $("#query-input").val();
+          location.hash = "#" + $("input.query").val();
+          var q = $("input.query").val();
           document.body.innerHTML = html;
+          $("input.query").val("").focus().val(q);
           query_remap();
         }
       });
@@ -55,5 +57,5 @@ if(location.hash != ""){
       }
     }
   });
-  $("#query-input, input.query").val(q);
+  $("input.query, input.query").val(q);
 }

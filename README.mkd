@@ -2,7 +2,7 @@
 
 ## What's this?
 
-This is extension for safari.
+This is extension for Safari and __Chrome (NEW!)__.
 
 After installed this extension, you can search quickly on rurema search.
 

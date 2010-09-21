@@ -46,5 +46,7 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://github.com/sorah/rurema_instant/raw/master/misc/safari.plist</string>
 </dict>
 </plist>

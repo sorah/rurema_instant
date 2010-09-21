@@ -1,6 +1,7 @@
 {
   "name": "Rurema Search Instant",
   "version": "1.1.1",
+  "update_url": "http://github.com/sorah/rurema_instant/raw/master/misc/chrome.xml",
   "content_scripts": [{
     "js": [ "jquery.js", "rurema_instant.js" ],
     "matches": [ "http://rurema.clear-code.com/*" ]
